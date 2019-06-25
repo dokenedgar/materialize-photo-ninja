@@ -17,6 +17,12 @@
       background-position: center;
       min-height: 1000px;
   }
+  .tabs .indicator {
+    background-color: #1a237e;
+  }
+  .tabs .tab a:focus, .tabs .tab a:focus.active {
+    background: transparent;
+  }
   .section {
     padding-top: 4vw;
     padding-bottom: 4vw;;
@@ -98,13 +104,35 @@
   </div>
 
   <!-- services / tabs -->
-  <div class="container">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic deserunt explicabo voluptatibus in quod reiciendis nesciunt dicta dolorem harum ad voluptatem expedita temporibus cumque ducimus error consequuntur maiores, unde quaerat!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic deserunt explicabo voluptatibus in quod reiciendis nesciunt dicta dolorem harum ad voluptatem expedita temporibus cumque ducimus error consequuntur maiores, unde quaerat!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic deserunt explicabo voluptatibus in quod reiciendis nesciunt dicta dolorem harum ad voluptatem expedita temporibus cumque ducimus error consequuntur maiores, unde quaerat!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic deserunt explicabo voluptatibus in quod reiciendis nesciunt dicta dolorem harum ad voluptatem expedita temporibus cumque ducimus error consequuntur maiores, unde quaerat!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic deserunt explicabo voluptatibus in quod reiciendis nesciunt dicta dolorem harum ad voluptatem expedita temporibus cumque ducimus error consequuntur maiores, unde quaerat!</p>
-  </div>
+  <section class="container section" id="services">
+    <div class="row">
+      <div class="col s12 l4">
+        <h2 class="indigo-text text-darken-4">What I do...</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorum aliquam quae ab corporis minus fuga recusandae, eaque fugit consectetur ea voluptas vel, laborum pariatur placeat! Culpa consectetur facere tempora.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolorum aliquam quae ab corporis minus fuga recusandae, eaque fugit consectetur ea voluptas vel, laborum pariatur placeat! Culpa consectetur facere tempora.</p>
+      </div>
+      <div class="col s12 l6 offset-l2">
+        <ul class="tabs">
+          <li class="tab col s6">
+            <a href="#photography" class="indigo-text text-darken-4">Photography</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+          </li>
+        </ul>
+        <div class="col s12" id="photography">
+          <p class="flow-text indigo-text text-darken-4">PHOTOGRAPHY</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptates ex tempore quaerat culpa accusantium mollitia animi sequi ad aut sed sunt obcaecati cupiditate, hic earum eligendi dicta, enim inventore!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptates ex tempore quaerat culpa accusantium mollitia animi sequi ad aut sed sunt obcaecati cupiditate, hic earum eligendi dicta, enim inventore!</p>
+        </div>
+        <div class="col s12" id="editing">
+          <p class="flow-text indigo-text text-darken-4">EDITING</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptates ex tempore quaerat culpa accusantium mollitia animi sequi ad aut sed sunt obcaecati cupiditate, hic earum eligendi dicta, enim inventore!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptates ex tempore quaerat culpa accusantium mollitia animi sequi ad aut sed sunt obcaecati cupiditate, hic earum eligendi dicta, enim inventore!</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- parallax -->
   <div class="parallax-container">
@@ -131,6 +159,7 @@
       $('.sidenav').sidenav();
       $('.materialboxed').materialbox();
       $('.parallax').parallax();
+      $('.tabs').tabs();
     });
   </script>
 </body>
